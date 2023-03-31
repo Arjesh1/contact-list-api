@@ -23,13 +23,13 @@ const display = (users) => {
   
     users.map((user) => {
       str += `
-          <div class="card m-2" style="width: 20rem">
+          <div class="card m-2 border border-danger " style="width: 20rem ">
           <img src="${user.picture.large}" class="card-img-top" alt="user-img"/>
-          <div class="card-body">
+          <div class="card-body  text-white">
           <h5 class="card-title">
           ${user.name.title} ${user.name.first} ${user.name.last}
           </h5>
-          <p class="card-text">
+          <p class="card-text bg-body">
           <ul class="list-unstyled">
           <li>${user.phone}</li>
           <li>${user.email}</li>
